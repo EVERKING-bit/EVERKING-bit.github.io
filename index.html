@@ -96,6 +96,20 @@
             0% { transform: translateX(0%); }
             100% { transform: translateX(-100%); }
         }
+        .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 <body>
@@ -144,16 +158,16 @@
     <section id="gallery">
         <h2>Gallery</h2>
         <img src="AFK 2.png" width="200px">
-        <div>               
-            <img src="ANA 1 F.png" width="500px">
-            <img src="ANA 2 F.png" width="500px">
-            <img src="CON 1.png" width="500px">            
-            <img src="CON 2.png" width="500px">
-            <img src="BIO F.png" width="500px">        
-            <img src="CHEM F.png" width="500px">
-            <img src="PHY F.png" width="500px">
-            <img src="SCI F.png" width="500px">        
-            </div>            
+        <div class="gallery-grid">
+  <img src="ANA 1 F.png" alt="">
+  <img src="ANA 2 F.png" alt="">
+  <img src="CON 1.png" alt="">  
+  <img src="CON 2.png" alt="">
+  <img src="BIO F.png" alt="">
+  <img src="CHEM F.png" alt="">
+  <img src="PHY F.png" alt="">
+  <img src="SCI F.png" alt="">  
+</div>    
         <p>This is a preview of some of my recent design works.</p>
     </section>
 
